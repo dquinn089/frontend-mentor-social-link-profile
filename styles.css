@@ -23,13 +23,13 @@ body {
     height: 100vh;
     padding: 20px;
 }
+
 main {
     background-color: var(--dark-grey);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: auto;
     max-width: 375px;
     width: 100%;
     box-sizing: border-box;
@@ -38,6 +38,7 @@ main {
     text-align: center
 
 }
+
 img {
     border-radius: 50%;
     width: 100px;
@@ -45,33 +46,36 @@ img {
     margin: 15px;
     padding: 10px;
 }
+
 header h1 {
     color: var(--white);
     margin: auto;
     text-align: center;
-    font-weight: normal;
+    font-weight: 500;
 }
-header h3 {
+
+header h2 {
     color: var(--green);
     margin: auto;
     font-size: small;
     margin: 10px;
 }
+
 header p {
     color: var(--white);
     margin: 20px;
     white-space: nowrap;
 }
-.links {
+
+ul {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-button {
-    font-family: "Inter", sans-serif;
+
+li {
+    list-style-type: none;
     background-color: var(--grey);
-    color: var(--white);
-    font-weight: 700;
     padding: 15px;
     width: 100%;
     margin: 8px 0;
@@ -81,8 +85,19 @@ button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button:hover {
+li a {
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+li:hover {
     background-color: var(--green);
+    color: var(--grey);
+}
+
+li:hover a {
     color: var(--grey);
 }
 
